@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ARCAB QRCode Redirect
 
-## Getting Started
+Landing page de redirecionamento da ARCAB para uso em QR Codes.
 
-First, run the development server:
+Ao abrir a URL, o usuário vê uma animação curta e é redirecionado automaticamente para o site principal.
+
+## Stack
+
+- Next.js 16 (App Router)
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- Framer Motion
+
+## Como rodar localmente
+
+1. Instale as dependências:
+
+```bash
+npm install
+```
+
+2. Inicie o ambiente de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Abra no navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Scripts disponíveis
 
-## Learn More
+- `npm run dev`: inicia o servidor de desenvolvimento.
+- `npm run build`: gera o build de produção.
+- `npm run start`: inicia o app em modo produção.
+- `npm run lint`: executa o lint com ESLint.
 
-To learn more about Next.js, take a look at the following resources:
+## Estrutura principal
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `app/page.tsx`: entrada da página inicial.
+- `components/redirect-animation.tsx`: animação e lógica de redirecionamento.
+- `app/layout.tsx`: layout global e metadados.
+- `app/globals.css`: estilos globais.
+- `public/assets`: logos e assets visuais.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Customização rápida
 
-## Deploy on Vercel
+As configurações de redirecionamento ficam em `components/redirect-animation.tsx`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `REDIRECT_URL`: URL de destino.
+- `REDIRECT_DELAY_MS`: tempo para redirecionar automaticamente.
+- `FALLBACK_LINK_DELAY_MS`: tempo para exibir link manual de fallback.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Deploy
+
+Pode ser publicado em qualquer ambiente compatível com Next.js.
+
+Fluxo recomendado:
+
+1. `npm run build`
+2. `npm run start` (teste local em modo produção)
