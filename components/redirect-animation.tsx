@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const REDIRECT_URL = "https://arcab.com.br";
+const REDIRECT_URL = "https://links.arcab.com.br";
 const REDIRECT_DELAY_MS = 1500;
 const FALLBACK_LINK_DELAY_MS = 2000;
 const EASE_OUT_EXPO = [0.16, 1, 0.3, 1] as const;

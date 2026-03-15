@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "ARCAB QR Code Redirect",
   description: "Landing page de redirecionamento da ARCAB.",
   icons: {
-    icon: [{ url: "/assets/logo.svg", type: "image/svg+xml", sizes: "any" }],
-    shortcut: "/assets/logo.svg",
+    icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
+    shortcut: "/favicon.svg",
   },
 };
 
