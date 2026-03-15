@@ -15,7 +15,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ARCAB QR Code Redirect",
+  title: "ARCAB TECH | QR Code Redirect",
   description: "Landing page de redirecionamento da ARCAB.",
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
