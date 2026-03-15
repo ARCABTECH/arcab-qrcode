@@ -15,8 +15,26 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://qr.arcab.com.br"),
   title: "ARCAB TECH | QR Code Redirect",
   description: "Landing page de redirecionamento da ARCAB.",
+  openGraph: {
+    title: "ARCAB QR",
+    description: "Landing page de redirecionamento da ARCAB.",
+    url: "https://qr.arcab.com.br",
+    siteName: "ARCAB",
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title: "ARCAB QR",
+    description: "Landing page de redirecionamento da ARCAB.",
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml", sizes: "any" }],
     shortcut: "/favicon.svg",
