@@ -60,15 +60,7 @@ export function RedirectAnimation() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.65, delay: 0.1, ease: EASE_OUT_EXPO }}
         >
-          <span className="inline-flex items-end">
-            <span className="inline-block pr-1 align-bottom">{REDIRECT_LABEL}</span>
-            <motion.span
-              aria-hidden
-              className="ml-0.5 inline-block h-3 w-px bg-eco-base/70"
-              animate={{ opacity: [1, 0, 1] }}
-              transition={{ duration: 0.55, repeat: Infinity, ease: "easeInOut" }}
-            />
-          </span>
+          <span className="inline-block align-bottom">{REDIRECT_LABEL}</span>
         </motion.p>
 
         <motion.div
